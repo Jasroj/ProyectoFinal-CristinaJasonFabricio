@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Campos de filtro -->
+        <EditText
+            android:id="@+id/etBuscarCiudad"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Buscar por ciudad"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etBuscarComida"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Buscar por tipo de comida"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnFiltrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filtrar"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Lista de ofertas -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvOfertas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
